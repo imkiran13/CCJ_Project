@@ -1,0 +1,31 @@
+/* ------------------- */
+/* common button css starts              */
+/* ------------------- */
+
+.button {
+  font-size: rem(14);
+  line-height: 16.1px;
+  text-align: center;
+  padding: 10px 25px;
+  outline: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  min-width: fit-content;
+  transition: all 500ms;
+
+  &-primary {
+    color: $white;
+    background: $brown;
+
+    &:focus-visible,
+    &:hover {
+      border: 1px solid $brown;
+      background: $white;
+      color: $brown;
+    }
+  }
+}
+
+/* ------------------- */
+/* common button css ends           */
+/* ------------------- */
