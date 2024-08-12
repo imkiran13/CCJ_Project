@@ -2,21 +2,32 @@
   background: $brown;
   padding: 10px 0;
   @include media-breakpoint-up(lg) {
-    padding: 20px 0;
+    padding: 70px 0 20px;
   }
 
-  &_top {
-    //   display: flex;
-    //   justify-content: space-between;
+  &__top {
+
     @include media-breakpoint-up(lg) {
       display: flex;
-      gap: 35px;
+      justify-content: space-between;
     }
     &-box {
       border-bottom: 1px solid rgba($white, 0.3);
 
       @include media-breakpoint-up(lg) {
         border-bottom: 0;
+      }
+      &-main{
+        @include media-breakpoint-up(lg) {
+        width: 28%;
+        }
+        ul{
+            li{
+                a{
+                    font-size: rem(12) !important;
+                }
+            }
+        }
       }
     }
     h5 {
@@ -31,9 +42,11 @@
       padding-inline: 10px;
       color: $white;
       cursor: pointer;
-
-      // margin-bottom: 50px;
       @include media-breakpoint-up(lg) {
+        cursor: text;
+        font-size: rem(20);
+        padding: 0;
+        margin-bottom: 35px;
         > img {
           display: none;
         }
@@ -66,6 +79,9 @@
         align-items: flex-start;
         gap: 10px;
         padding-inline: 10px;
+        @include media-breakpoint-up(lg) {
+         padding-inline: 0;
+        }
         &:not(:last-child) {
           margin-bottom: 15px;
         }
@@ -78,16 +94,26 @@
         }
 
         p {
-          font-weight: 700;
-          font-size: rem(16);
+          
+          font-size: rem(14);
           color: $white;
           line-height: 20px;
+          cursor: text;
+          text-transform: capitalize;
+         
         }
-        span,
+        address{
+            cursor: text;
+            color: $white;
+            font-size: rem(12);
+            margin-bottom: 0;
+            
+        }
         a {
           font-size: rem(14);
           color: $white;
           line-height: 20px;
+          
         }
       }
     }
