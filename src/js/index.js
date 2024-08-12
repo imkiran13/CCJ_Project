@@ -1,16 +1,22 @@
 $(document).ready(function () {
-  $("#open-sidebar").on("click", function () {
+  $(".btn-close").css("display", "none");
+
+  $(".hamburger-icon").on("click", function () {
     $(".header-right").addClass("active");
+    $(".hamburger-icon").css("display", "none");
+    $(".btn-close").css("display", "block");
   });
 
-  $("#close-sidebar").on("click", function () {
+  $(".btn-close").on("click", function () {
     $(".header-right").removeClass("active");
+    $(".hamburger-icon").css("display", "block");
+    $(".btn-close").css("display", "none");
   });
 
   if (innerWidth <= 991) {
-    $(".footer_top-box h5").on("click", function () {
+    $(".footer__top-box h5").on("click", function () {
       // Close all other open ULs
-      $(".footer_top-box h5")
+      $(".footer__top-box h5")
         .not(this)
         .removeClass("active")
         .next("ul")
