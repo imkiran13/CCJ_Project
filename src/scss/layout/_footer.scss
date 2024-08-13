@@ -72,7 +72,6 @@
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
-        border: 1px solid red;
       }
       li {
         display: flex;
@@ -151,11 +150,7 @@
               width: 30px;
               aspect-ratio: 1 / 1;
 
-              &:first-child {
-                @include media-breakpoint-up(lg) {
-                //   padding-top: 10px;
-                }
-              }
+             
             }
           }
         }
