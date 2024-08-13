@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="author" content="Rohit Kumar" />
     <meta name="description" content="Your Project Description" />
@@ -10,50 +11,364 @@
 
     <!-- Favicon Start  -->
     <link rel="icon" href="src/icons/favicon.ico" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="src/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="src/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="src/icons/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/icons/favicon-16x16.png" />
     <link rel="manifest" href="src/icons/site.webmanifest" />
     <!-- Favicon End  -->
 
     <!-- Custom CSS Start  -->
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="src/css/style.css" />
     <!-- Custom CSS End  -->
-  </head>
+</head>
 
-  <body>
-    <header>
+<body>
+    <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row ">
+                <div class="col-xl-6 col-lg-5">
+                    <div class="header__left">
+
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="header__left__logo">
+                                <img src="/src/images/Ecowas_Logo.svg" alt="header-logo">
+                            </div>
+                            <h1>Community Court of Justice <br>Cour De Justice De La Communaute <br>Tribunal De Justica
+                                Da
+                                Comunidade</h1>
+                        </div>
+                        <div class="header__icons">
+                            <img src="/src/images/mobile-hamburger.svg" alt="mobile-hamburger" id="open-sidebar"
+                                class="hamburger-icon">
+                            <button type="button" class="btn-close p-0" aria-label="Close" id="close-sidebar"></button>
+                        </div>
+
+                    </div>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-7">
+                    <div class="header-right">
+                        <div>
+                            <ul class="header-right__top">
+                                <li><a href="">Search Documents</a></li>
+                                <li><a href="">Message Centre</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">News Letter</a></li>
+                                <li><button class="button button-primary">E-filing/ ECMS</button></li>
 
+                            </ul>
+                            <div class="header-right__bottom">
+                                <div class="header-right__searchsite">
+                                    <input class="form-control" type="text" placeholder="Search site"
+                                        aria-label="default input example">
+                                    <img src="/src/images/search_logo.svg" alt="search-icon" class="search-icon">
+                                </div>
+                                <div class="header-right__select">
+                                    <select class="form-select" aria-label="Large select example">
+                                        <option selected>Eng</option>
+                                        <option value="2">Fre</option>
+                                        <option value="3">Por</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <nav>
+                            <ul class="container">
+                                <li><a href="javascript:void(0)" class="dropbtn dropbtn--grid">Home </a></li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dropbtn">About Us <svg width="13" height="7"
+                                            viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.00002L7.47222 5.54358C6.9375 6.08016 6.0625 6.08016 5.52778 5.54358L1 1.00002"
+                                                stroke="black" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Mandate & Jurisdiction
+                                        </a>
+                                        <a href="#"> Practical information</a>
+                                        <a href="#"> Basic text </a>
+
+                                        <a href="#"> Mission and Vision  </a>
+                                        <a href="#"> Court History   </a>
+
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="dropbtn">
+                                        <span>Structure
+                                            of the Court</span>
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.00002L7.47222 5.54358C6.9375 6.08016 6.0625 6.08016 5.52778 5.54358L1 1.00002"
+                                                stroke="black" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Organogram
+                                        </a>
+                                        <a href="#">Judicial Panel</a>
+
+
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="dropbtn">
+                                        <span>Cases and
+                                            Decisions</span>
+
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.00002L7.47222 5.54358C6.9375 6.08016 6.0625 6.08016 5.52778 5.54358L1 1.00002"
+                                                stroke="black" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Search Cases
+                                        </a>
+                                        <a href="#">Browse Cases</a>
+                                        <a href="#">Decisions of the Court
+                                        </a>
+                                        <a href="#">Cause List</a>
+
+
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="dropbtn dropbtn--grid">Notice of
+                                        Registration</a></li>
+                                <li><a href="javascript:void(0)" class="dropbtn">
+                                        <span>Legal
+                                            Resources</span>
+
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.00002L7.47222 5.54358C6.9375 6.08016 6.0625 6.08016 5.52778 5.54358L1 1.00002"
+                                                stroke="black" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+                                    <div class="dropdown-content">
+                                        <a href="#">
+                                            Court Rules
+                                        </a>
+                                        <a href="#">International Treaties </a>
+                                        <a href="#">
+                                            Legal Precedents
+                                        </a>
+                                        <a href="#">Legal research web resources</a>
+
+
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="dropbtn">
+                                        <span>Events of the
+                                            Court</span>
+
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.00002L7.47222 5.54358C6.9375 6.08016 6.0625 6.08016 5.52778 5.54358L1 1.00002"
+                                                stroke="black" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">
+                                            Upcoming Hearings
+                                        </a>
+                                        <a href="#">Non judicial events</a>
+
+
+
+                                    </div>
+                                </li>
+                                <li><a href="javascript:void(0)" class="dropbtn">
+                                        <span>Media &
+                                            Publications</span>
+
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.00002L7.47222 5.54358C6.9375 6.08016 6.0625 6.08016 5.52778 5.54358L1 1.00002"
+                                                stroke="black" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></a>
+                                    <div class="dropdown-content">
+                                        <a href="#">
+                                            Media
+                                        </a>
+                                        <a href="#">Publications</a>
+
+
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="dropbtn"><span>News & Updates</span>
+
+                                        <svg width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1.00002L7.47222 5.54358C6.9375 6.08016 6.0625 6.08016 5.52778 5.54358L1 1.00002"
+                                                stroke="black" stroke-width="2" stroke-miterlimit="10"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <div class="dropdown-content">
+                                        <a href="#">
+                                            Press Releases
+                                        </a>
+                                        <a href="#">
+                                            News Articles </a>
+                                        <div class="dropdown-submenu">
+                                            <a href="#">Court Updates &nbsp; &nbsp; &#x276F; </a>
+                                            <div class="dropdown-content-submenu">
+                                                <a href="#">
+                                                    Announcements
+                                                </a>
+                                                <a href="#">Maintenance Alerts</a>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+
+                        </nav>
+                    </div>
                 </div>
 
             </div>
-         <div class="header__wrapper">
-         
-         </div>
-            
+
+
         </div>
+
     </header>
+
+   <main>
     
+   </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-box footer__top-box-main">
+                    <h5 class="footer_top_menu "><span>Contact Information </span>
+                        <img loading="lazy" src="/src/images/down-arrow.svg" alt="" title="" />
+                    </h5>
+                    <ul>
+
+                        <li>
+                            <img src="/src/images/location.svg" alt="">
+                            <div>
+                                <p>The Community Court of Justice, ECOWAS is located at:</p>
+                                <address>Plot 1164, Joseph Gomwalk Street, Gudu District Abuja, Nigeria.</address>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/src/images/mail.svg" alt="mail-icon">
+                            <div>
+                                <p>Information about a case, </p>
+                                <a href="javascript:;">registry@courtecowas.</a>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <img src="/src/images/mail.svg" alt="mail-icon">
+                            <div>
+                                <p> General information, </p>
+                                <a href="javascript:;">info@courtecowas.org </a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/src/images/mail.svg" alt="mail-icon">
+                            <div>
+                                <p>Hon. President’s Office, </p>
+                                <a href="javascript:;">president@courtecowas.org</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/src/images/domain.svg" alt="domain-icon">
+                            <div>
+                                <p>You could also visit our website: </p>
+                                <a href="javascript:;">www.courtecowas.org</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__top-box">
+                    <h5 class="footer_top_menu">
+                        <span>Opportunities</span>
+                        <img loading="lazy" src="/src/images/down-arrow.svg" alt="" title="" />
+                    </h5>
+                    <ul>
+
+                        <li><a href="javascript:;">Vacancies </a></li>
+                        <li><a href="javascript:;">Invitations to Tenders</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top-box">
+                    <h5 class="footer_top_menu">
+                        <span> Legal</span>
+                        <img loading="lazy" src="/src/images/down-arrow.svg" alt="" title="" />
+                    </h5>
+                    <ul>
+
+                        <li><a href="javascript:;">Ecowas Commission </a></li>
+                        <li><a href="javascript:;">Ecowas Parliament </a></li>
+                        <li><a href="javascript:;">Ecowas Bank for Investment and Development (EBID) </a></li>
+                        <li><a href="javascript:;">West African Health Organization (WAHO) </a></li>
+                        <li><a href="javascript:;">African Court </a></li>
+                        <li><a href="javascript:;">East African Court of Justice </a></li>
+                        <li><a href="javascript:;">SADC Court of Justice </a></li>
+                        <li><a href="javascript:;">COMESA </a></li>
+                        <li><a href="javascript:;">Sitemap </a></li>
+                    </ul>
+                </div>
+                <div class="footer__top-box">
+                    <h5 class="footer_top_menu">
+                        <span>Quick Links</span>
+                        <img loading="lazy" src="/src/images/down-arrow.svg" alt="" title="" />
+                    </h5>
+                    <ul>
+                        <li><a href="javascript:;"> Privacy Policy </a></li>
+                        <li><a href="javascript:;">Legal Notice </a></li>
+                        <li><a href="javascript:;">Cookies </a></li>
+                        <li><a href="javascript:;">Disclaimer and Warning </a></li>
+                        <li><a href="javascript:;">Accessibility </a></li>
+                        <li><a href="javascript:;">Data Protection on the CCJ Website </a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <ul>
+                    <li><a href="javascript:;"><img src="/src/images/facebook-icon.svg" alt="fb-icon"></a></li>
+                    <li><a href="javascript:;"><img src="/src/images/twitter-icon.svg" alt="twitter-icon"></a></li>
+                    <li><a href="javascript:;"><img src="/src/images/linkedin-icon.svg" alt="linkedin-icon"></a></li>
+                    <li><a href="javascript:;"><img src="/src/images/youtube-icon.svg" alt="youtube-icon"></a></li>
+                    <li><a href="javascript:;"><img src="/src/images/discord-icon.svg" alt="discord-icon"></a></li>
+                    <li><a href="javascript:;"><img src="/src/images/blogs-icon.svg" alt="blog-icon"></a></li>
+                </ul>
+                <div class="footer_bottom_copyright">
+                    <span>©2024 CCJ- All rights reserved</span>
+                </div>
+            </div>
+        </div>
+
+
+    </footer> 
+
 
     <!-- Owl Carousel Start -->
     <script src="src/js/jquery/jquery.min.js"></script>
@@ -67,5 +382,6 @@
     <!-- Custom JS Start -->
     <script src="src/js/index.js"></script>
     <!-- Custom JS End -->
-  </body>
+</body>
+
 </html>
