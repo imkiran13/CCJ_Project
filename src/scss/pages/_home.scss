@@ -1,0 +1,182 @@
+.banner {
+  background-image: linear-gradient(
+      270deg,
+      rgba(148, 86, 72, 0.8) -8.71%,
+      rgba(173, 79, 46, 0.5) 23.26%,
+      rgba(255, 255, 255, 0) 61.25%
+    ),
+    url(./../images/home-banner.png);
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  height: 310px; /* Set the height of the banner */
+  width: 100%; /* Set the width of the banner */
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    h6 {
+      width: 350px;
+      text-align: right;
+      text-transform: uppercase;
+      font-size: rem(30);
+      padding-top: 47px;
+      color: $white;
+      /* box-shadow: 0px 4px 10px 0px #340E06CC; */
+      //   text-shadow: 2px 2px 4px #340e06cc;
+      text-shadow: 0px 4px 10px #340e06cc;
+    }
+  }
+}
+
+.homepage {
+    margin: 70px 0 30px;
+  .carausal-section {
+    position: relative;
+    margin-bottom: 25px;
+    .owl-nav {
+         margin-top: 0;
+         position: absolute;
+         top: -75px;
+         right: 0;
+         display: flex;
+         align-items: center;
+        .owl-prev,
+        .owl-next{
+            height: 30px;
+            width: 30px;
+            margin: 5px;
+            background: rgba($light-brown,0.3);
+            color: $black;
+            font-size: rem(26);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+            &:hover{
+                background: $brown;
+                color: $white;
+            }
+        }
+    }
+    .owl-item {
+      .item {
+        h6 {
+            font-size: rem(14);
+            color: $secondary-black;
+            margin-bottom: 8px;
+            span {
+              font-size: rem(20);
+              color: $green;
+              margin-right: 3px;
+            }
+          }
+          p{
+              font-size: rem(12);
+              color: $black;
+              margin-bottom: 15px;
+              text-transform: uppercase;
+              line-height: 15.66px;
+          }
+          a{
+              font-size: rem(12);
+              color: $brown;
+              font-weight: 700;
+              text-transform: uppercase;
+          }
+      }
+        
+      }
+    }
+
+    .calender-section{
+        
+    }
+
+    .community-section{
+       margin-top: 50px;
+        .community-banner{
+            img{
+                height: 210px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .community-info{
+            background: $green;
+            padding: 20px;
+            h6{
+                font-size: rem(22);
+                color: $white;
+                line-height: 25.3px;
+                margin-bottom: 20px;
+                span{
+                    text-transform: uppercase;
+                    color: $yellow;
+                }
+            }
+            p{
+                font-family: $ff-roboto;
+                font-size: rem(14);
+                color: $white;
+                text-align: justify;
+            }
+        }
+       
+    }
+    .form-cases-wrapper{
+        background: $slate;
+        padding: 30px 20px;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .date-wrapper{
+                display: flex;
+                flex-direction: column;
+                label{
+                    font-size: rem(14);
+                }
+            }
+            .form-select,
+            .form-control,
+            .date-picker{
+                background-color: $slate;
+            }
+        }
+    }
+    .multimedia-content{
+        margin-bottom: 15px;
+    }
+    .latest-news--wrapper{
+        margin-top: 50px;
+        .latest-news{
+            padding-bottom: 20px;
+           
+            h6 {
+                font-size: rem(14);
+                color: $secondary-black;
+                margin-bottom: 8px;
+                span {
+                  font-size: rem(20);
+                  color: $green;
+                  margin-right: 3px;
+                }
+              }
+              p{
+                  font-size: rem(14);
+                  color: $black;
+                  margin-bottom: 15px;
+                  text-transform: uppercase;
+                  line-height: 15.66px;
+              }
+              a{
+                  font-size: rem(12);
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  display: inline-block;
+              }
+        }
+    }
+  }
+

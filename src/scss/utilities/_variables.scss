@@ -2,27 +2,29 @@
 /* Font family         */
 /* ------------------- */
 
-$ff-helvetica:"Helvetica", "Arial", sans-serif;;
+$ff-helvetica: "Helvetica", "Arial", sans-serif;
 $ff-roboto: "Roboto", sans-serif;
-$ff-montserrat:"Montserrat", sans-serif;
+$ff-montserrat: "Montserrat", sans-serif;
 /* ------------------- */
 /* Colors              */
 /* ------------------- */
 $black: #000000;
+$secondary-black: #212121;
 $white: #ffffff;
 $slate: #f7f7f7;
 $brown: #945547;
-$light-brown:#e6cbc1;
+$light-brown: #e6cbc1;
 $green: #008042;
 $yellow: #e6cb00;
 $grey: #a8a8a8;
 $dark-grey: #6e6e6e;
-
+$faded-brown: #ad4f2e4d;
+$ligh-grey:#45454533;
 
 /* ------------------- */
 /* Font Path           */
 /* ------------------- */
-$fonts-path: "../../fonts" !default;
+$fonts-path: "../fonts" !default;
 
 /* ------------------- */
 /* Image Path          */

@@ -26,4 +26,25 @@ $(document).ready(function () {
       $(this).toggleClass("active").next("ul").slideToggle();
     });
   }
+
+  // owl carausal jquery
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+       
+      },
+    },
+  });
 });

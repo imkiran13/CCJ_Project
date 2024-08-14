@@ -1,0 +1,26 @@
+.bottom-border{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba($brown,0.5);
+    position: relative;
+    margin-bottom: 30px;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 5px;
+        background: $brown;
+        width: 30px;
+        bottom: -2.5px;
+        left: 0;
+    }
+    h6{
+     font-size: rem(22);
+     color: $secondary-black;
+     line-height: 23.3px;
+    }
+}
+
+.horizontal-border{
+    margin-block: 20px;
+    border-bottom: 1px solid rgba($ligh-grey, 0.2);
+   
+}

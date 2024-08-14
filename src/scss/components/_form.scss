@@ -18,6 +18,27 @@
         border-color:$grey;
     }
 }
+.form-field-wrapper{
+  .form-label{
+      font-size: rem(16);
+      font-weight: 400;
+      color: $secondary-black;
+      margin-bottom: 5px;
+  }
+}
+
+.date-picker{
+    outline: none;
+    border: 1px solid $grey;
+    border-radius: 0 !important;
+    font-size: rem(14);
+    padding: 10px 15px;
+    color: $dark-grey;
+    text-transform: uppercase;
+}
+input[type="date" i]::-webkit-calendar-picker-indicator{
+  background-image: url(../images/caledner-icon.svg);
+}
 /* ------------------- */
 /* common input css end             */
 /* ------------------- */
