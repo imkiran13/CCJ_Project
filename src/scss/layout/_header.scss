@@ -217,7 +217,9 @@
           display: grid;
           align-items: center;
           grid-template-columns: 1fr 11px;
-          
+          background-image: url('/src/images/down-arrow-black.svg');
+         background-position: 280px;
+          background-repeat: no-repeat;
           @include media-breakpoint-up(lg) {
             color: black !important;
             text-decoration: none;
@@ -228,6 +230,7 @@
             place-items: center;
             white-space: pre-line;
             padding-inline: 16px;
+            background-position: 110px 27px;
             
           }
           @include media-breakpoint-up(xl) {
@@ -239,6 +242,7 @@
             @include media-breakpoint-up(lg) {
                 grid-template-columns: 1fr !important;
                 gap: 0;
+                background-image: none;
             }
            
           }
@@ -286,7 +290,7 @@
             .dropdown-content-submenu {
               display: none;
               position: absolute;
-              left: 100%;
+              left: -278px;
               top: 0;
               background-color: #f1f1f1;
               min-width: 160px;
