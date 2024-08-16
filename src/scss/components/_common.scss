@@ -18,6 +18,8 @@
   scrollbar-color: $grey $slate; /* Thumb color, track color */
 }
 
+// common  bottom border css
+
 .bottom-border {
   padding-bottom: 10px;
   border-bottom: 1px solid rgba($brown, 0.5);
@@ -40,7 +42,31 @@
   }
 }
 
+// horixontal border css
 .horizontal-border {
   margin-block: 20px;
   border-bottom: 1px solid rgba($ligh-grey, 0.2);
+}
+
+// common popup design css
+
+.popup-wrapper {
+  padding: 20px;
+  background: $white;
+  border-radius: 0;
+  .modal-header {
+    justify-content: center;
+    border-bottom: 0;
+    position: relative;
+    .btn-close {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      display: inline-block !important;
+    }
+    h1 {
+      font-size: rem(20);
+      color: $brown;
+    }
+  }
 }
