@@ -54,19 +54,39 @@
   padding: 20px;
   background: $white;
   border-radius: 0;
+
   .modal-header {
     justify-content: center;
     border-bottom: 0;
     position: relative;
-    .btn-close {
-      position: absolute;
-      right: 10px;
-      top: 0;
-      display: inline-block !important;
-    }
+
     h1 {
       font-size: rem(20);
       color: $brown;
     }
+    p {
+      font-size: rem(16);
+      color: $text-black;
+    }
+  }
+  button {
+    min-width: 180px;
+    text-transform: uppercase;
+  }
+  .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: block !important;
+    padding: 0;
+    min-width: auto;
+  }
+  .green-heading{
+   font-size: rem(40);
+   color: $green;
+  }
+  .thankyou-text{
+    font-size: rem(20);
+    color: $brown;
   }
 }
