@@ -130,7 +130,7 @@
     .week {
       display: grid;
       color: $charcoal;
-      grid-template-columns: repeat(7, 1fr);
+      grid-template-columns: repeat(7, 35px);
       margin: auto;
       padding: 0 10px;
       background: rgba($medium-grey, 0.5);
@@ -141,8 +141,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 3rem;
-      width: 3em;
+      height: 2.1rem;
+      width: 2.5em;
       font-size: rem(14);
     }
     #days div:hover {
