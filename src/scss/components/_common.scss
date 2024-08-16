@@ -1,21 +1,21 @@
 /* For Webkit-based browsers like Chrome, Safari */
 .custom-scrollbar {
-    &::-webkit-scrollbar {
-        width: 4px; /* Set the scrollbar width */
-      }
-    
-      &::-webkit-scrollbar-track {
-        background: $slate; /* Track color */
-      }
-    
-      &::-webkit-scrollbar-thumb {
-        background-color: $grey; /* Scrollbar thumb color */
-        border-radius: 10px; /* Roundness of the scroll thumb */
-      }
-    
-      /* For Firefox */
-      scrollbar-width: thin; /* Set scrollbar width */
-      scrollbar-color: $grey $slate; /* Thumb color, track color */
+  &::-webkit-scrollbar {
+    width: 4px; /* Set the scrollbar width */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $slate; /* Track color */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey; /* Scrollbar thumb color */
+    border-radius: 10px; /* Roundness of the scroll thumb */
+  }
+
+  /* For Firefox */
+  scrollbar-width: thin; /* Set scrollbar width */
+  scrollbar-color: $grey $slate; /* Thumb color, track color */
 }
 
 .bottom-border {
@@ -23,6 +23,7 @@
   border-bottom: 1px solid rgba($brown, 0.5);
   position: relative;
   margin-bottom: 30px;
+  z-index: -1;
   &::after {
     content: "";
     position: absolute;
