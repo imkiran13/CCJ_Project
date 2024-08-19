@@ -25,7 +25,9 @@
   border-bottom: 1px solid rgba($brown, 0.5);
   position: relative;
   margin-bottom: 30px;
-//   z-index: -1;
+  display: flex;
+    justify-content: space-between;
+  //   z-index: -1;
   &::after {
     content: "";
     position: absolute;
@@ -81,12 +83,19 @@
     padding: 0;
     min-width: auto;
   }
-  .green-heading{
-   font-size: rem(40);
-   color: $green;
+  .green-heading {
+    font-size: rem(40);
+    color: $green;
   }
-  .thankyou-text{
+  .thankyou-text {
     font-size: rem(20);
     color: $brown;
   }
+}
+
+// detail page heading with pagination
+
+.heading-pagination {
+    padding-block: 30px;
+ 
 }
