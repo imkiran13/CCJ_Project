@@ -114,7 +114,7 @@
         align-items: center;
         justify-content: flex-end;
       }
-      @include media-breakpoint-up(xl) {
+      @include media-breakpoint-up(xxl) {
         gap: 28px;
       }
       li {
@@ -327,13 +327,17 @@
         }
         &:last-child {
           .dropdown-content {
+            // a {
+            //   white-space: wrap !important;
+            // }
             .dropdown-submenu {
               position: relative;
 
               .dropdown-content-submenu {
                 display: none;
                 position: absolute;
-                left: -278px !important;
+                left: -280px !important;
+                transform: translateX(0px);
                 top: 0;
                 background-color: $slate;
                 min-width: 160px;
