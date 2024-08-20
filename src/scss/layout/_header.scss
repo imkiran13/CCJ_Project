@@ -12,7 +12,6 @@
     @include media-breakpoint-up(lg) {
       display: none;
     }
-    
   }
   @include media-breakpoint-up(lg) {
     position: relative;
@@ -26,11 +25,12 @@
     transition: unset;
     height: 100%;
     animation: unset;
+    z-index: 10;
   }
   &__left {
     @extend %alignCenter;
     gap: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     width: 100%;
     background: $white;
     position: fixed;
@@ -43,7 +43,6 @@
     }
     @include media-breakpoint-up(xl) {
       gap: 10px;
-      margin-bottom: 0;
     }
     &__logo {
       width: 40px;
@@ -94,7 +93,7 @@
 
     @include media-breakpoint-up(lg) {
       position: static;
-      width: auto;
+      width: 100%;
       display: inline-block;
       height: auto;
       transform: unset;
@@ -179,7 +178,6 @@
   }
 
   nav {
-    
     @include media-breakpoint-up(lg) {
       background: $light-brown;
       position: fixed;
@@ -217,8 +215,8 @@
           display: grid;
           align-items: center;
           grid-template-columns: 1fr 11px;
-          background-image: url('/src/images/down-arrow-black.svg');
-         background-position: 280px;
+          background-image: url("/src/images/down-arrow-black.svg");
+          background-position: right;
           background-repeat: no-repeat;
           @include media-breakpoint-up(lg) {
             color: black !important;
@@ -230,21 +228,19 @@
             place-items: center;
             white-space: pre-line;
             padding-inline: 16px;
-            background-position: 110px 27px;
-            
+            background-position: 90px 27px;
           }
           @include media-breakpoint-up(xl) {
             padding-inline: 16px;
-           
+            background-position: 110px 27px;
           }
 
           &--grid {
             @include media-breakpoint-up(lg) {
-                grid-template-columns: 1fr !important;
-                gap: 0;
-                background-image: none;
+              grid-template-columns: 1fr !important;
+              gap: 0;
+              background-image: none;
             }
-           
           }
         }
 
@@ -254,11 +250,11 @@
           background-color: #f1f1f1;
           min-width: 130px;
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          z-index: 1;
+          z-index: 10;
           @include media-breakpoint-up(lg) {
             min-width: 100%;
           }
-         
+
           a {
             padding: 12px 16px;
             text-decoration: none;
@@ -287,7 +283,7 @@
               justify-content: space-between;
               word-wrap: break-word;
             }
-            .dropdown-content-submenu {
+            .dropdown-content-submenu-new {
               display: none;
               position: absolute;
               left: -278px;
@@ -295,13 +291,27 @@
               background-color: $slate;
               min-width: 160px;
               box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-              z-index: 1;
+              z-index: 10;
+              @include media-breakpoint-up(lg) {
+                min-height: max-content;
+              }
+            }
+            .dropdown-content-submenu {
+              display: none;
+              position: absolute;
+              left: 100%;
+              top: 0;
+              background-color: $slate;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+              z-index: 10;
               @include media-breakpoint-up(lg) {
                 min-height: max-content;
               }
             }
             &:hover {
-              .dropdown-content-submenu {
+              .dropdown-content-submenu,
+              .dropdown-content-submenu-new {
                 display: block;
               }
             }
@@ -318,22 +328,18 @@
               display: grid;
               color: $brown !important;
             }
-           
           }
           .dropdown-content {
             display: flex;
             flex-direction: column;
-            li{
-                 padding-block: 0;
+            li {
+              padding-block: 0;
             }
           }
         }
       }
     }
   }
-
-
-
 }
 
 @keyframes showSidebar {

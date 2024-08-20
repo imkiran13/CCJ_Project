@@ -1,0 +1,46 @@
+.custom-pagination {
+  border: 1px solid $charcoal-light;
+  width: 100%;
+  display: flex;
+  padding-block: 7px;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-up(md) {
+   justify-content: center;
+  }
+  li {
+    border-right: 1px solid rgba($black, 0.2);
+    &:first-child {
+      a {
+        border: none;
+      }
+    }
+    &:last-child {
+      a {
+        border: none;
+      }
+    }
+    &:nth-child(3) {
+      a {
+        font-size: rem(22);
+        color: $brown;
+      }
+    }
+    a {
+      font-size: rem(12);
+      color: $black;
+      border-radius: 0;
+      border: 0;
+      padding-inline: 17px;
+      background: $white;
+      margin-left: 0 !important;
+      &:hover {
+        background: inherit;
+      }
+    }
+    
+    &:last-child{
+        border-right: 0;
+    }
+  }
+}
