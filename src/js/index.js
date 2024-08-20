@@ -43,8 +43,17 @@ $(document).ready(function () {
       },
       992: {
         items: 3,
-       
       },
     },
+  });
+});
+
+// faq javascript logic
+document.querySelectorAll(".faq-heading").forEach((heading) => {
+  heading.addEventListener("click", function () {
+    const faqWrapper = this.parentElement;
+
+    // Toggle the 'active' class to show/hide the body
+    faqWrapper.classList.toggle("active");
   });
 });
