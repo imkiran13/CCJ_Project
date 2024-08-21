@@ -60,6 +60,7 @@
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+
   @include media-breakpoint-up(md) {
     flex-wrap: nowrap;
   }
@@ -77,23 +78,21 @@
       width: 70%;
       margin-right: 35px;
     }
-    @include media-breakpoint-up(xxl) {
-      width: 75%;
-    }
   }
   .pagination-right {
     width: 100%;
+    margin-top: 20px;
     @include media-breakpoint-up(md) {
       width: 50%;
+      justify-content: flex-end;
+      display: flex;
+      margin-top: 0;
     }
     @include media-breakpoint-up(lg) {
       width: 35%;
     }
     @include media-breakpoint-up(xl) {
       width: 30%;
-    }
-    @include media-breakpoint-up(xxl) {
-      width: 25%;
     }
   }
 }
