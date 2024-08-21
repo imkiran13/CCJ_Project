@@ -1,27 +1,39 @@
 /* ------------------- */
-/* common button css starts              */
+/* common button css starts*/
 /* ------------------- */
 
 .button {
-  font-size: rem(14);
   line-height: 16.1px;
   text-align: center;
   padding: 10px 25px;
   outline: none;
   border: 1px solid transparent;
-  white-space: nowrap;
   min-width: fit-content;
   transition: all 500ms;
-
+  font-weight: 700;
+  font-family: $ff-roboto;
   &-primary {
     color: $white;
     background: $brown;
-
+    text-transform: uppercase;
+    font-size: rem(14);
     &:focus-visible,
     &:hover {
       border: 1px solid $brown;
       background: $white;
       color: $brown;
+    }
+  }
+  &-secondary {
+    color: $white;
+    background: $green;
+    text-transform: uppercase;
+    font-size: rem(12);
+    &:focus-visible,
+    &:hover {
+      border: 1px solid $green;
+      background: $white;
+      color: $green;
     }
   }
 }

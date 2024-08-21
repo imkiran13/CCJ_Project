@@ -1,4 +1,4 @@
-.custom-pagination {
+.pagination {
   border: 1px solid $charcoal-light;
   width: 100%;
   display: flex;
@@ -6,41 +6,43 @@
   align-items: center;
   justify-content: center;
   @include media-breakpoint-up(md) {
-   justify-content: center;
+    justify-content: center;
   }
-  li {
-    border-right: 1px solid rgba($black, 0.2);
-    &:first-child {
-      a {
-        border: none;
-      }
+  .prev,
+  .next {
+    font-size: rem(12) !important;
+  }
+  .page-numbers {
+    font-size: rem(16);
+    color: $black;
+    border-radius: 0;
+    border: 0;
+    padding-inline: 17px;
+    background: $white;
+    margin-left: 0 !important;
+    position: relative;
+    &:hover {
+      background: inherit;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 32px;
+      background: rgba($black, 0.2);
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
     }
     &:last-child {
-      a {
-        border: none;
+      &::after {
+        display: none;
       }
     }
-    &:nth-child(3) {
-      a {
-        font-size: rem(22);
-        color: $brown;
-      }
-    }
-    a {
-      font-size: rem(12);
-      color: $black;
-      border-radius: 0;
-      border: 0;
-      padding-inline: 17px;
-      background: $white;
-      margin-left: 0 !important;
-      &:hover {
-        background: inherit;
-      }
-    }
-    
-    &:last-child{
-        border-right: 0;
-    }
+  }
+  .current {
+    font-size: rem(22);
+    color: $brown;
   }
 }

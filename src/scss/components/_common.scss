@@ -18,7 +18,7 @@
   scrollbar-color: $grey $slate; /* Thumb color, track color */
 }
 
-// common  bottom border css
+/* common  bottom border css starts */
 
 .bottom-border {
   padding-bottom: 10px;
@@ -26,8 +26,13 @@
   position: relative;
   margin-bottom: 30px;
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
   //   z-index: -1;
+  @include media-breakpoint-up(lg) {
+    gap: 0;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -43,14 +48,16 @@
     line-height: 23.3px;
   }
 }
+/* common  bottom border css ends */
 
-// horixontal border css
+/* horizontal border css starts */
 .horizontal-border {
   margin-block: 20px;
   border-bottom: 1px solid rgba($ligh-grey, 0.2);
 }
+/* horizontal border css ends */
 
-// common popup design css
+/* common popup design css starts */
 
 .popup-wrapper {
   padding: 20px;
@@ -92,10 +99,21 @@
     color: $brown;
   }
 }
+/* common popup design css ends */
 
-// detail page heading with pagination
+/* detail page heading with pagination ends */
 
 .heading-pagination {
-    padding-block: 30px;
- 
+  padding-block: 30px;
 }
+/* detail page heading with pagination ends */
+
+/* common breadcrumb without bottom border heading css starts */
+.caselist-main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* common breadcrumb without bottom border heading css ends */
+
+/* read more link css */
