@@ -1,0 +1,11 @@
+.cause-list-wrapper {
+  .proposal-request {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  p {
+    font-family: $ff-roboto;
+    text-align: justify;
+  }
+}

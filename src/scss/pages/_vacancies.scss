@@ -1,0 +1,22 @@
+.vacancies-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .vanacies-card {
+    width: 100%;
+    padding: 38px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba($black, 0.2);
+    @include media-breakpoint-up(lg) {
+      width: 49%;
+    }
+    .card-top {
+      // p{
+      //     span{
+
+      //     }
+      // }
+      border-bottom: 1px solid rgba($black, 0.1);
+    }
+  }
+}
