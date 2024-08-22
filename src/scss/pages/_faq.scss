@@ -13,7 +13,6 @@
       max-height: fit-content;
       @include media-breakpoint-up(lg) {
         width: 48%;
-        max-height: 87px;
       }
       @include media-breakpoint-up(xl) {
         width: 49%;
