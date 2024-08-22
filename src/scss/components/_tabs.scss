@@ -1,0 +1,21 @@
+.nav-tabs {
+  justify-content: center;
+  gap: 17px;
+  border-bottom: 0;
+  .nav-link {
+    padding: 15px 20px;
+    font-size: rem(14);
+    color: rgba($white, 0.8);
+    border-radius: 10px;
+    border: 1px solid rgba($white, 0.5);
+    background-color: transparent;
+    text-transform: capitalize;
+    min-width: 163px;
+    &.active {
+      border: 1px solid $white;
+      font-weight: 700;
+      color: $white;
+      background-color: transparent;
+    }
+  }
+}
