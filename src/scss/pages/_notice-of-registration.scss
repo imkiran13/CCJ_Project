@@ -1,0 +1,52 @@
+.nor-wrapper {
+  margin-top: 30px;
+  margin-bottom: 120px;
+  .nor-left {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .nor-left-bottom {
+      margin-top: 25px;
+      h6 {
+        font-weight: 400;
+        color: $black;
+        font-size: rem(20);
+        padding-bottom: 18px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba($black, $alpha: 0.1);
+      }
+      p {
+        font-size: rem(14);
+        color: $text-black;
+        font-family: $ff-roboto;
+        line-height: 19px;
+      }
+    }
+  }
+  .nor-right {
+    background-color: $slate;
+    padding: 20px;
+    .nor-list {
+      display: flex;
+      align-items: center;
+      padding-block: 22px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba($black, $alpha: 0.1);
+      gap: 5px;
+      &:first-child {
+        padding-top: 0;
+      }
+      p {
+        color: $text-black;
+        font-size: rem(16);
+        font-weight: 500;
+        font-family: $ff-roboto;
+      }
+      .nor-pdf {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+}
