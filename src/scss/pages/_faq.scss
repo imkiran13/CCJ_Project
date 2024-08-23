@@ -31,11 +31,10 @@
         display: flex;
         justify-content: space-between;
         padding: 25px 20px;
-        //   border: 2px solid rgba($black,0.5);
-        // border: 2px solid rgba(0, 0, 0, 0.502);
 
         p {
           font-size: rem(20);
+          max-width: 520px;
         }
         .faq-arrow img {
           transition: transform 0.3s ease; /* Smooth rotation transition */
