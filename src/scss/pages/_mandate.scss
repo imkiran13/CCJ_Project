@@ -1,0 +1,26 @@
+.mandate-wrapper {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  .mandate-left {
+    background-color: $brown;
+    padding: 38px 135px 28px 28px;
+    height: 100%;
+    h6 {
+      font-size: rem(28);
+      font-weight: 500;
+      color: $white;
+      margin-bottom: 15px;
+    }
+    p {
+      color: rgba($white, 0.9);
+      font-size: rem(18);
+    }
+  }
+
+  .mandate-right {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
