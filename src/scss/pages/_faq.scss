@@ -11,12 +11,7 @@
       border-radius: 10px;
       background: $slate;
       max-height: fit-content;
-      @include media-breakpoint-up(lg) {
-        width: 48%;
-      }
-      @include media-breakpoint-up(xl) {
-        width: 49%;
-      }
+
       .faq-body {
         display: none; /* Initially hide the body */
         padding: 10px;
