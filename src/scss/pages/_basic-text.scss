@@ -1,0 +1,15 @@
+.basic-text-wrapper {
+  .basic-left {
+    background-color: $brown;
+    padding: 40px;
+    height: 100%;
+    ol{
+        li{
+            font-weight: 500;
+            color: $white;
+            padding-block: 15px;
+            border-bottom: 1px solid ;
+        }
+    }
+  }
+}
