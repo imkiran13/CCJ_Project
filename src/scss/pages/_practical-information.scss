@@ -5,11 +5,28 @@
     max-width: 1200px;
     padding-inline: 15px;
     margin: 0 auto;
-    img {
+    .information-right {
       height: 100%;
-      width: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
+
     .information-left {
+      .lists-main {
+        .list {
+          padding-block: 15px;
+          border-bottom: 1px solid rgba($black, 0.1);
+          font-weight: 500;
+          font-size: rem(16);
+          color: $text-black;
+          font-family: $ff-roboto;
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+      }
       h6 {
         font-size: rem(18);
         color: $text-black;
@@ -49,7 +66,6 @@
         max-width: 238px;
         display: flex;
         justify-content: center;
-       
       }
       .brown-box {
         border: 2px solid $brown;
