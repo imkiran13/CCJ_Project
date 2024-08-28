@@ -55,10 +55,11 @@
         width: 92px;
       }
     }
-    h1 {
+    a {
       font-size: rem(10);
       line-height: 11.81px;
       text-transform: uppercase;
+      font-weight: 700;
       @include media-breakpoint-up(sm) {
         font-size: rem(14);
         line-height: 18px;
