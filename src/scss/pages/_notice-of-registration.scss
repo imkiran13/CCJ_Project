@@ -29,8 +29,14 @@
     padding: 20px;
     .nor-list {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       padding-block: 22px;
+      justify-content: space-between;
+      flex-direction: column;
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        align-items: center;
+      }
       cursor: pointer;
       border-bottom: 1px solid rgba($black, $alpha: 0.1);
       gap: 5px;
@@ -46,7 +52,14 @@
       .nor-pdf {
         height: 18px;
         width: 18px;
-        
+      }
+      h6 {
+        font-size: rem(14);
+        color: $secondary-black;
+        span {
+          color: $green;
+          font-size: rem(20);
+        }
       }
     }
   }
