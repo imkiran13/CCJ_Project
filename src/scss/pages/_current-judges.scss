@@ -16,8 +16,11 @@
       flex-direction: column;
       border: 1px solid rgba($black, 0.2);
       .judges-top {
+        width: 100%;
+        height: 340px;
         img {
           width: 100%;
+          height: 100%;
         }
       }
       .judges-bottom {

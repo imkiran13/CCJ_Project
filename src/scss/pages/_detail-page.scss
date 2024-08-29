@@ -5,6 +5,9 @@
     max-width: 847px;
     padding-inline: 15px;
     margin: 0 auto;
+    img {
+      width: 100%;
+    }
     h6 {
       font-size: rem(14);
       color: $secondary-black;
