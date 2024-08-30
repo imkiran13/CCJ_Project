@@ -7,14 +7,18 @@
     height: 100%;
     ul {
       li {
-        font-weight: 500;
-        color: $white;
         padding-block: 15px;
         font-family: $ff-roboto;
         cursor: pointer;
+        font-weight: 500;
+        color: $white;
         border-bottom: 1px solid rgba($white, 0.1);
         &:first-child {
           padding-top: 0;
+        }
+        a {
+          font-weight: 500;
+          color: $white;
         }
         .letter {
           font-weight: 500;
@@ -46,7 +50,6 @@
           color: $charcoal;
           padding-block: 15px;
           font-size: rem(18);
-
           font-family: $ff-roboto;
           &:first-child {
             padding-top: 0;
@@ -59,17 +62,22 @@
       padding: 30px;
       ul {
         li {
-          color: $charcoal;
           padding-block: 15px;
+          cursor: pointer;
+          color: $charcoal;
           font-size: rem(16);
           font-weight: 500;
-          cursor: pointer;
           display: flex;
           align-items: flex-start;
           font-family: $ff-roboto;
           border-bottom: 1px solid rgba($charcoal, 0.2);
           &:first-child {
             padding-top: 0;
+          }
+          a {
+            color: $charcoal;
+            font-size: rem(16);
+            font-weight: 500;
           }
           .letter {
             font-weight: 500;

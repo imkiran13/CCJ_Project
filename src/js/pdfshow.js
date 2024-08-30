@@ -11,23 +11,3 @@ document.getElementById("openPDFBtn").addEventListener("click", function () {
   // Show the iframe container
   pdfContainer.classList.remove("hidden");
 });
-
-// Zoom functionality
-var zoomLevel = 1;
-const zoomStep = 0.1;
-
-document.getElementById("zoomInBtn").addEventListener("click", function () {
-  zoomLevel += zoomStep;
-  setZoom();
-});
-
-document.getElementById("zoomOutBtn").addEventListener("click", function () {
-  zoomLevel = Math.max(0.5, zoomLevel - zoomStep); // Prevent zooming out too much
-  setZoom();
-});
-
-function setZoom() {
-  var pdfIframe = document.getElementById("pdfIframe");
-  pdfIframe.style.transform = `scale(${zoomLevel})`;
-  pdfIframe.style.transformOrigin = "0 0"; // Zoom from the top-left corner
-}

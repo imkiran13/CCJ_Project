@@ -57,3 +57,36 @@ document.querySelectorAll(".faq-heading").forEach((heading) => {
     faqWrapper.classList.toggle("active");
   });
 });
+
+// Create a WaveSurfer instance
+var wavesurfer = WaveSurfer.create({
+  container: "#waveform",
+  waveColor: " rgba(0, 0, 0, 0.3)",
+  progressColor: " rgba(148, 86, 72, 1)",
+  height: 50,
+  responsive: true,
+  // Set a bar width
+  barWidth: 1,
+  // Optionally, specify the spacing between bars
+  barGap: 1,
+  // And the bar radius
+  barRadius: 2,
+});
+
+// Load an audio file
+wavesurfer.load("audio.mp3");
+
+// Play/pause button functionality
+var playPauseBtn = document.getElementById("playPauseBtn");
+var playIcon =
+  '<img loading="lazy" src="src/images/play.svg" alt="Play" title="Play" />';
+var pauseIcon =
+  '<img loading="lazy" src="src/images/play.svg" alt="Play" title="Play" />';
+playPauseBtn.addEventListener("click", function () {
+  wavesurfer.playPause();
+  if (wavesurfer.isPlaying()) {
+    playPauseBtn.innerHTML = playIcon;
+  } else {
+    playPauseBtn.innerHTML = playIcon;
+  }
+});
