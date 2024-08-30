@@ -30,6 +30,7 @@
     color: $white;
     background: $green;
     text-transform: uppercase;
+    border: 1px solid $white;
     font-size: rem(12);
     &:focus-visible,
     &:hover {
