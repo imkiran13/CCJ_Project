@@ -3,7 +3,7 @@ document.getElementById("openPDFBtn").addEventListener("click", function () {
   var pdfContainer = document.getElementById("pdfContainer");
 
   // Set the PDF file URL
-  var pdfUrl = "/cases-pdf.pdf";
+  var pdfUrl = document.getElementById("cause_pdf_file").value;
 
   // Set the iframe src to the PDF file URL
   pdfIframe.src = pdfUrl;

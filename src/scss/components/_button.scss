@@ -7,11 +7,13 @@
   text-align: center;
   padding: 10px 25px;
   outline: none;
-  border: 1px solid transparent;
+  border: 1px solid $brown;
   min-width: fit-content;
   transition: all 500ms;
   font-weight: 700;
   font-family: $ff-roboto;
+  color: $brown;
+  background: $white;
   &-primary {
     color: $white;
     background: $brown;
