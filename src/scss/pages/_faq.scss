@@ -1,5 +1,8 @@
 .faq-main {
   padding-bottom: 130px;
+  .newsletter-para{
+    font-family: $ff-roboto;
+  }
   ul {
     display: flex;
     flex-wrap: wrap;

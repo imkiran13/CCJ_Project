@@ -44,6 +44,7 @@
       &:first-child {
         padding-top: 0;
       }
+
       p {
         color: $text-black;
         font-size: rem(16);
@@ -60,8 +61,7 @@
       }
 
       .nor-pdf {
-        height: 18px;
-        width: 18px;
+        max-width: 18px;
       }
       h6 {
         font-size: rem(14);
@@ -69,7 +69,13 @@
         span {
           color: $green;
           font-size: rem(20);
+          width: auto;
         }
+      }
+      .button-secondary {
+        min-width: 118px;
+        align-self: baseline;
+        padding-inline: 11.5px;
       }
     }
   }
