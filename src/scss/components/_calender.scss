@@ -155,8 +155,16 @@
 .tribe-events {
   .tribe-events-calendar-month__day-cell--mobile {
     &:hover {
-      background-color: inherit !important;
+      background: $brown !important;
       border: 0 !important;
     }
   }
+}
+.tribe-common--breakpoint-medium.tribe-events
+  .tribe-events-c-view-selector--tabs
+  .tribe-events-c-view-selector__list {
+  gap: 30px;
+}
+.tribe-events .tribe-events-calendar-month__day-cell--mobile {
+  justify-content: center;
 }
