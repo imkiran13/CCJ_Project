@@ -11,11 +11,16 @@
     background-color: transparent;
     text-transform: capitalize;
     min-width: 163px;
+    text-align: center;
     &.active {
       border: 1px solid $white;
       font-weight: 700;
       color: $white;
       background-color: transparent;
+    }
+    &:hover {
+      color: $black;
+      background-color: $white;
     }
   }
 }
