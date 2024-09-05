@@ -228,7 +228,8 @@
           padding: 0;
           border: 0;
           width: 100%;
-          &.current_page_item {
+          &.current_page_item,
+          &.current_page_ancestor {
             .dropbtn {
               background-color: rgba($white, 0.8);
             }
