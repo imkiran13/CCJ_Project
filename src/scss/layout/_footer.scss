@@ -3,7 +3,7 @@
   background: $brown;
   padding: 10px 0;
   @include media-breakpoint-up(lg) {
-    padding: 70px 0 20px;
+    padding: 50px 0 20px;
   }
 
   &__top {
@@ -158,7 +158,7 @@
         width: 100%;
         padding-top: 27px;
         border-top: 1px solid rgba($white, 0.3);
-        margin-top: 45px;
+        margin-top: 30px;
         text-align: center;
       }
     }
