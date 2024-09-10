@@ -46,14 +46,12 @@
       transition: 0.5s ease;
 
       .icons {
-        
         position: absolute;
         top: 60%;
         left: 80%;
         transform: translate(-50%, -50%);
         display: flex;
         gap: 10px;
-        
       }
     }
 
@@ -67,7 +65,8 @@
         ); // Black gradient overlay
       }
     }
-    img {
+    img,
+    video {
       width: 100%;
     }
     &:last-child {
