@@ -1,3 +1,6 @@
+/* ------------------- */
+/* press release css starts     */
+/* ------------------- */
 .press-release-wrapper {
   margin-block: 30px;
   .press-main {
@@ -41,11 +44,11 @@
           width: 100%;
         }
         .press-news {
-            padding-block: 20px;
-            border-bottom: 1px solid rgba($black, 0.1);
-            &:last-child{
-                border-bottom: 0;
-            }
+          padding-block: 20px;
+          border-bottom: 1px solid rgba($black, 0.1);
+          &:last-child {
+            border-bottom: 0;
+          }
           h6 {
             font-weight: 700;
             font-size: rem(14);
@@ -67,3 +70,6 @@
     }
   }
 }
+/* ------------------- */
+/* press release css ends      */
+/* ------------------- */
