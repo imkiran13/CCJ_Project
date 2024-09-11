@@ -4,6 +4,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const concat = require("gulp-concat");
 const minify = require("gulp-minify");
 const cleanCss = require("gulp-clean-css");
+var mmq = require("gulp-merge-media-queries");
 
 // Development Tasks
 gulp.task("sass", function () {
@@ -11,6 +12,8 @@ gulp.task("sass", function () {
     .src("src/scss/**/*.scss") // Gets all files ending with .scss in src/scss and children dirs
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError)) // Passes it through a gulp-sass, log errors to console
+    .pipe(cleanCss()) // Minifying the CSS
+    .pipe(mmq()) // Merging media queries
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("src/css")); // Outputs it in the css folder
 });
@@ -60,3 +63,11 @@ gulp.task("minifyjs", function () {
       .pipe(gulp.dest("src/js"))
   );
 });
+
+// gulp.task('mmq', function () {
+//   gulp.src('src/**/*.css')
+//     .pipe(mmq({
+//       log: true
+//     }))
+//     .pipe(gulp.dest('dist'));
+// });
