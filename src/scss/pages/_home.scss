@@ -55,37 +55,86 @@
         }
       }
     }
-    .owl-item {
-      .item {
-        h6 {
-          font-size: rem(14);
-          color: $secondary-black;
-          margin-bottom: 8px;
-          span {
-            font-size: rem(20);
-            color: $green;
-            margin-right: 3px;
+    .owl-stage-outer {
+      padding-block: 20px;
+      .owl-item {
+        .item {
+          box-shadow: 0px 4px 20px 0px #0000000a;
+          padding: 20px;
+          background-color: $white;
+          h6 {
+            font-size: rem(14);
+            color: $secondary-black;
+            margin-bottom: 8px;
+            span {
+              font-size: rem(20);
+              color: $green;
+              margin-right: 3px;
+            }
           }
-        }
-        p {
-          font-size: rem(12);
-          color: $black;
-          margin-bottom: 15px;
-          text-transform: uppercase;
-          line-height: 15.66px;
-        }
-        a {
-          font-size: rem(12);
-          color: $brown;
-          font-weight: 700;
-          text-transform: uppercase;
+          p {
+            font-size: rem(12);
+            color: $black;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            line-height: 15.66px;
+          }
+          a {
+            font-size: rem(12);
+            color: $brown;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
         }
       }
     }
   }
-
+  .president-section {
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: $slate;
+    .president-left {
+      background-color: $slate;
+      padding: 15px;
+      p {
+        font-size: rem(20);
+        font-weight: 700;
+        font-family: $ff-roboto;
+        color: rgba($black, 0.9);
+        margin-top: 10px;
+      }
+      span {
+        font-size: rem(16);
+        font-family: $ff-roboto;
+        color: $text-black;
+        margin-top: 4px;
+      }
+    }
+    .president-right {
+      padding: 15px;
+      p {
+        margin-top: 15px;
+        font-family: $ff-roboto;
+        color: $text-black;
+        text-align: justify;
+        font-size: rem(14);
+      }
+      .read-more {
+        text-transform: uppercase;
+        margin-top: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .calender-form-section {
+    margin-top: 30px;
+  }
+  .latest-articles-section {
+    margin-top: 30px;
+  }
   .calender-section {
-    margin-top: 25px;
+    box-shadow: 0px 4px 20px 0px #0000000a;
+    padding: 20px;
     header {
       display: flex;
       justify-content: space-between;
@@ -161,12 +210,9 @@
   }
 
   .community-section {
-    margin-top: 50px;
     .community-banner {
       img {
-        height: 210px;
         width: 100%;
-        object-fit: cover;
       }
     }
     .community-info {
@@ -193,6 +239,8 @@
   .form-cases-wrapper {
     background: $slate;
     padding: 20px;
+    box-shadow: 0px 4px 20px 0px #0000000a;
+
     form {
       display: flex;
       flex-direction: column;
@@ -221,7 +269,6 @@
     }
   }
   .latest-news--wrapper {
-    margin-top: 30px;
     .latest-news {
       padding-bottom: 10px;
 
