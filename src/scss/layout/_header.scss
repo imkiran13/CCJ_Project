@@ -126,9 +126,7 @@
       }
       select,
       input {
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
+        border-radius: 6px !important;
         border-bottom: 1px solid $grey;
         @include media-breakpoint-up(lg) {
           width: 100%;

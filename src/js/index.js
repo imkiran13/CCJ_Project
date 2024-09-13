@@ -26,9 +26,7 @@ $(document).ready(function () {
       $(this).toggleClass("active").next("ul").slideToggle();
     });
   }
-
-  // owl carausal jquery
-  $(".owl-carousel").owlCarousel({
+  $(".owl-carousel-decisions").owlCarousel({
     loop: true,
     margin: 10,
     dots: false,
@@ -43,6 +41,30 @@ $(document).ready(function () {
       },
       992: {
         items: 3,
+      },
+    },
+  });
+  $(".owl-carousel-banner").owlCarousel({
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    items: 1,
+    loop: true,
+    smartSpeed: 8000,
+    dots: false,
+    nav: false,
+    margin: 5,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 1,
+      },
+      992: {
+        items: 1,
       },
     },
   });

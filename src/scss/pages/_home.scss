@@ -28,7 +28,6 @@
   margin: 10px 0 30px;
   .carausal-section {
     position: relative;
-    margin-bottom: 25px;
     margin-top: 30px;
     .owl-nav {
       margin-top: 0;
@@ -55,37 +54,98 @@
         }
       }
     }
-    .owl-item {
-      .item {
-        h6 {
-          font-size: rem(14);
-          color: $secondary-black;
-          margin-bottom: 8px;
-          span {
-            font-size: rem(20);
-            color: $green;
-            margin-right: 3px;
+    .owl-stage-outer {
+      padding-block: 20px;
+      .owl-item {
+        .item {
+          padding: 10px;
+          .decision-slide {
+            box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
+            padding: 20px;
+            background-color: $white;
+            border-radius: 6px;
+            h6 {
+              font-size: rem(14);
+              color: $secondary-black;
+              margin-bottom: 8px;
+              span {
+                font-size: rem(20);
+                color: $green;
+                margin-right: 3px;
+              }
+            }
+            p {
+              font-size: rem(12);
+              color: $black;
+              margin-bottom: 15px;
+              text-transform: uppercase;
+              line-height: 15.66px;
+            }
+            a {
+              font-size: rem(12);
+              color: $brown;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
           }
-        }
-        p {
-          font-size: rem(12);
-          color: $black;
-          margin-bottom: 15px;
-          text-transform: uppercase;
-          line-height: 15.66px;
-        }
-        a {
-          font-size: rem(12);
-          color: $brown;
-          font-weight: 700;
-          text-transform: uppercase;
         }
       }
     }
   }
-
+  .president-section {
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: $slate;
+    .president-left {
+      background-color: $slate;
+      padding: 15px;
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: rem(20);
+        font-weight: 700;
+        font-family: $ff-roboto;
+        color: rgba($black, 0.9);
+        margin-top: 10px;
+      }
+      span {
+        font-size: rem(16);
+        font-family: $ff-roboto;
+        color: $text-black;
+        margin-top: 4px;
+      }
+    }
+    .president-right {
+      padding: 15px;
+      p {
+        margin-top: 15px;
+        font-family: $ff-roboto;
+        color: $text-black;
+        text-align: justify;
+        font-size: rem(14);
+      }
+      .read-more {
+        text-transform: uppercase;
+        margin-top: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .calender-form-section {
+    margin-top: 40px;
+  }
+  .latest-articles-section {
+    margin-top: 40px;
+  }
   .calender-section {
-    margin-top: 25px;
+    box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
+    padding: 20px;
+    height: 100%;
+    background-color: #fefefe;
+    .calender-box {
+      border: 1px solid #f4f4f4;
+    }
     header {
       display: flex;
       justify-content: space-between;
@@ -128,9 +188,13 @@
       grid-template-columns: repeat(7, 35px);
       margin: auto;
       padding: 0 10px;
-      background: rgba($medium-grey, 0.5);
+      // background: rgba($medium-grey, 0.5);
       justify-content: space-between;
     }
+    #days {
+      padding-block: 10px;
+    }
+
     .week div,
     #days div {
       display: flex;
@@ -141,8 +205,8 @@
       font-size: rem(14);
     }
     #days div:hover {
-      background: var(--accent-2);
-      color: rgb(25, 25, 201);
+      background: $green;
+      color: $white;
       cursor: pointer;
     }
 
@@ -161,12 +225,10 @@
   }
 
   .community-section {
-    margin-top: 50px;
+    box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
     .community-banner {
       img {
-        height: 210px;
         width: 100%;
-        object-fit: cover;
       }
     }
     .community-info {
@@ -191,8 +253,10 @@
     }
   }
   .form-cases-wrapper {
-    background: $slate;
+    background: #fefefe;
     padding: 20px;
+    box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
+    height: 100%;
     form {
       display: flex;
       flex-direction: column;
@@ -204,24 +268,21 @@
           font-size: rem(14);
         }
       }
-      .form-select,
-      .form-control,
-      .date-picker {
-        background-color: $slate;
-      }
     }
     .button {
       text-transform: uppercase;
     }
   }
   .multimedia-content {
+    box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
     margin-bottom: 15px;
     img {
       width: 100%;
     }
   }
   .latest-news--wrapper {
-    margin-top: 30px;
+    box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
+    padding: 20px;
     .latest-news {
       padding-bottom: 10px;
 
