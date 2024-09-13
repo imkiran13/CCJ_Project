@@ -4,6 +4,8 @@
 .nav-tabs {
   justify-content: center;
   gap: 17px;
+  display: flex !important;
+  flex-wrap: wrap;
   border-bottom: 0;
   .nav-link {
     padding: 15px 20px;
