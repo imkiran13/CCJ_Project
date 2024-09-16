@@ -55,7 +55,7 @@
       }
     }
     .owl-stage-outer {
-      padding-block: 20px;
+      // padding-block: 20px;
       .owl-item {
         .item {
           padding: 10px;
@@ -93,9 +93,10 @@
     }
   }
   .president-section {
-    margin-top: 10px;
+    margin-top: 40px;
     border-radius: 10px;
     background-color: $slate;
+    box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
     .president-left {
       background-color: $slate;
       padding: 15px;
@@ -226,6 +227,7 @@
 
   .community-section {
     box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
+    height: 100%;
     .community-banner {
       img {
         width: 100%;
@@ -234,6 +236,7 @@
     .community-info {
       background: $green;
       padding: 20px;
+      min-height: 400px;
       h6 {
         font-size: rem(22);
         color: $white;
@@ -276,6 +279,7 @@
   .multimedia-content {
     box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
     margin-bottom: 15px;
+
     img {
       width: 100%;
     }
@@ -283,6 +287,7 @@
   .latest-news--wrapper {
     box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
     padding: 20px;
+    height: 100%;
     .latest-news {
       padding-bottom: 10px;
 
