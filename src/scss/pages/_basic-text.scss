@@ -5,11 +5,19 @@
     background-color: $brown;
     padding: 40px;
     height: 100%;
+    p {
+      font-family: $ff-roboto;
+      font-weight: 500;
+      color: $white;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     ul {
       li {
         padding-block: 15px;
         font-family: $ff-roboto;
-
         font-weight: 500;
         color: $white;
         border-bottom: 1px solid rgba($white, 0.1);
