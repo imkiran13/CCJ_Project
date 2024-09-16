@@ -23,8 +23,13 @@
   .maintenance-cards-wrapper {
     .maintenance-card {
       .card-top {
-        img {
-          object-fit: contain;
+        a {
+          display: inline-block;
+          width: 100%;
+          img {
+            object-fit: contain;
+            height: 265px;
+          }
         }
       }
     }
