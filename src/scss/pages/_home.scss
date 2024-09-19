@@ -294,35 +294,42 @@
   }
   .latest-news--wrapper {
     box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
-    padding: 20px;
+    padding: 20px 0 20px 20px;
     height: 100%;
-    .latest-news {
-      padding-bottom: 10px;
+    .latest-news-main {
+      max-height: 535px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 20px;
+      padding-top: 20px;
+      .latest-news {
+        padding-bottom: 10px;
 
-      h6 {
-        font-size: rem(14);
-        color: $secondary-black;
-        margin-bottom: 8px;
-        span {
-          font-size: rem(20);
-          color: $green;
-          margin-right: 3px;
+        h6 {
+          font-size: rem(14);
+          color: $secondary-black;
+          margin-bottom: 8px;
+          span {
+            font-size: rem(20);
+            color: $green;
+            margin-right: 3px;
+          }
         }
-      }
-      p {
-        font-size: rem(14);
-        color: $black;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        line-height: 18.55px;
-        font-family: $ff-roboto;
-        text-align: justify;
-      }
-      a {
-        font-size: rem(12);
-        font-weight: 700;
-        text-transform: uppercase;
-        display: inline-block;
+        p {
+          font-size: rem(14);
+          color: $black;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          line-height: 18.55px;
+          font-family: $ff-roboto;
+          text-align: justify;
+        }
+        a {
+          font-size: rem(12);
+          font-weight: 700;
+          text-transform: uppercase;
+          display: inline-block;
+        }
       }
     }
   }
