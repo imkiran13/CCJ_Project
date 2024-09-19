@@ -294,17 +294,16 @@
   }
   .latest-news--wrapper {
     box-shadow: 0px 3px 16px rgba(1, 1, 1, 0.25);
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 0 20px;
     height: 100%;
     .latest-news-main {
-      max-height: 535px;
+      max-height: 560px;
       overflow-y: auto;
       overflow-x: hidden;
       padding-right: 20px;
       padding-top: 20px;
+      padding-bottom: 20px;
       .latest-news {
-        padding-bottom: 10px;
-
         h6 {
           font-size: rem(14);
           color: $secondary-black;
