@@ -85,6 +85,7 @@
               text-transform: uppercase;
               line-height: 15.66px;
               text-align: justify;
+              font-family: $ff-roboto;
               flex-grow: 1;
             }
             a {
@@ -106,6 +107,7 @@
     .president-left {
       background-color: $slate;
       padding: 15px;
+      border-radius: 10px 0 0 10px;
       img {
         width: 100%;
       }
@@ -313,6 +315,7 @@
         margin-bottom: 15px;
         text-transform: uppercase;
         line-height: 18.55px;
+        font-family: $ff-roboto;
         text-align: justify;
       }
       a {
