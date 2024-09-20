@@ -105,6 +105,7 @@
           @include media-breakpoint-up(lg) {
             padding-inline: 10px;
             font-size: rem(12);
+            white-space: nowrap;
           }
           @include media-breakpoint-up(xl) {
             font-size: rem(14);
