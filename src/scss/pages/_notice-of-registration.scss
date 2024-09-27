@@ -41,7 +41,7 @@
         flex-direction: row;
         align-items: center;
       }
-      cursor: pointer;
+
       border-bottom: 1px solid rgba($black, $alpha: 0.1);
       gap: 5px;
       &:first-child {
@@ -55,6 +55,7 @@
         font-family: $ff-roboto;
       }
       .download_pdf {
+        cursor: pointer;
         a {
           color: $text-black;
           font-size: rem(16);
