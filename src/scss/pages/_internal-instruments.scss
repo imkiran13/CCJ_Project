@@ -4,10 +4,15 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
     .regional-options {
-      width: 30%;
+      width: 100%;
       padding: 20px;
       border: 1px solid rgba($black, 0.2);
+      @include media-breakpoint-up(md) {
+        width: 30%;
+      }
+
       cursor: pointer;
       h6 {
         cursor: pointer;
