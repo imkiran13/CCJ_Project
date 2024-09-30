@@ -223,7 +223,10 @@
       color: $white;
       cursor: pointer;
     }
-
+    .selectedEvent {
+      background: $green;
+      color: $white;
+    }
     .current-date {
       background-color: $green;
       color: $white;
