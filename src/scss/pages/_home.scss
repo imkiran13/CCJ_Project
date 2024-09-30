@@ -231,6 +231,10 @@
     .current-date {
       background-color: $green;
       color: $white;
+      &:hover {
+        background-color: $green;
+        color: $white;
+      }
     }
     .display-selected {
       margin-bottom: 10px;
