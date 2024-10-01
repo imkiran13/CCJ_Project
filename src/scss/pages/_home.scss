@@ -26,6 +26,15 @@
 
 .homepage {
   margin: 10px 0 30px;
+  .welcome-section {
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    padding-block: 5px;
+    marquee {
+      color: $white;
+    }
+  }
   .carausal-section {
     position: relative;
     margin-top: 30px;
